@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Mining Bot Dashboard</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Welcome to the Mining Bot Dashboard!</h1>  
+        <div id="status"></div>  
+        <button onclick="checkStatus()">Check Status</button>  
+        <button onclick="startMining()">Start Mining</button>  
+        <button onclick="stopMining()">Stop Mining</button>  
+        <div id="message"></div>  
+        <h2>Admin Commands</h2>  
+        <div>  
+            <input type="text" id="adminId" placeholder="Admin User ID">  
+            <button onclick="addAdmin()">Add Admin</button>  
+            <button onclick="removeAdmin()">Remove Admin</button>  
+        </div>  
+        <button onclick="listAdmins()">List Admins</button>  
+        <div id="adminList"></div>  
+    </div>  
+    <script src="{{ url_for('static', filename='script.js') }}"></script>  
+</body>  
+</html>

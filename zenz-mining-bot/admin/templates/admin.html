@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Admin Management</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Admin Management</h1>  
+        <div id="message"></div>  
+
+        <h2>Add Admin</h2>  
+        <input type="text" id="adminId" placeholder="Enter Admin User ID">  
+        <button onclick="addAdmin()">Add Admin</button>  
+
+        <h2>Remove Admin</h2>  
+        <input type="text" id="removeAdminId" placeholder="Enter Admin User ID">  
+        <button onclick="removeAdmin()">Remove Admin</button>  
+
+        <h2>List of Admins</h2>  
+        <button onclick="listAdmins()">List Admins</button>  
+        <div id="adminList"></div>  
+    </div>  
+    <script src="{{ url_for('static', filename='script.js') }}"></script>  
+</body>  
+</html>

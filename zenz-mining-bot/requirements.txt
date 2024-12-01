@@ -1,0 +1,5 @@
+python-telegram-bot==13.7  
+Flask==2.0.2  
+web3==5.28.0  
+pytest==6.2.5  # For testing  
+solcx==1.0.0  # For Solidity compilation

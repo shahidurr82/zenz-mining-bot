@@ -1,0 +1,86 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Project Initialization Documentation</title>  
+    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Add your CSS file for styles -->  
+</head>  
+<body>  
+    <header>  
+        <h1>Telegram Mining Mini App</h1>  
+        <h2>Module Initialization Overview</h2>  
+    </header>  
+    
+    <main>  
+        <section>  
+            <h2>Purpose of __init__.py</h2>  
+            <p>This <code>__init__.py</code> file initializes the app module and prepares the application for use.   
+            It sets up the Flask application and starts the Telegram bot.</p>  
+        </section>  
+
+        <section>  
+            <h2>Key Functions</h2>  
+            <ul>  
+                <li><strong>create_app() </strong>- Initializes and configures the Flask application.</li>  
+                <li><strong>bot.start() </strong>- Starts the Telegram bot to handle incoming commands.</li>  
+            </ul>  
+        </section>  
+
+        <section>  
+            <h2>Directory Structure</h2>  
+            <pre>  
+            .  
+            ├── /app  
+            │   ├── __init__.py  
+            │   ├── bot.py  
+            │   ├── web_app.py  
+            │   ├── mining_logic.py  
+            │   ├── config.py  
+            │   └── utils.py  
+            ├── /templates  
+            │   └── index.html  
+            ├── /static  
+            │   ├── /css  
+            │   │   └── styles.css  
+            │   └── /js  
+            │       └── script.js  
+            ├── /contracts  
+            │   ├── YourContract.sol  
+            │   ├── deploy.py  
+            │   └── compile.py  
+            ├── /tests  
+            │   ├── test_bot.py  
+            │   ├── test_mining.py  
+            │   └── test_contracts.py  
+            ├── /env  
+            ├── requirements.txt  
+            └── README.md  
+            </pre>  
+        </section>  
+
+        <section>  
+            <h2>Usage Instructions</h2>  
+            <ol>  
+                <li>Clone the repository.</li>  
+                <li>Set up the virtual environment.</li>  
+                <li>Install the required packages.</li>  
+                <li>Start the Flask app and the Telegram bot.</li>  
+            </ol>  
+        </section>  
+
+        <section>  
+            <h2>Configuration</h2>  
+            <p>API keys and other configuration details should be added to <code>config.py</code>:</p>  
+            <pre>  
+            TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"  
+            INFURA_PROJECT_ID = "YOUR_INFURA_PROJECT_ID"  
+            </pre>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2024 Telegram Mining Mini App. Documentation generated from __init__.py.</p>  
+    </footer>  
+</body>  
+</html>
